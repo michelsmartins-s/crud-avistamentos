@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Avistamento</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <meu-header></meu-header>
+    <meu-nav></meu-nav>
+
+    <main>
+        <h2>Alterar Registro</h2>
+        <div id="mensagem">Escolha um registro abaixo para editar.</div>
+
+        <form id="avistamentoForm" class="oculto">
+            <input type="hidden" id="avistamentoId">
+            <input type="text" id="criatura" placeholder="Criatura ou Objeto" required>
+            <input type="text" id="local" placeholder="Local" required>
+            <textarea id="relato" placeholder="Relato" rows="4" required></textarea>
+            <button type="submit">Salvar Alterações</button>
+        </form>
+
+        <div id="avistamentosContainer"></div>
+    </main>
+
+    <meu-footer></meu-footer>
+
+    <script type="module" src="./js/components.js"></script>
+    <script type="module" src="./js/alterar.js"></script>
+</body>
+</html>

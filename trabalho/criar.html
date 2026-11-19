@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Avistamento</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <meu-header></meu-header>
+    <meu-nav></meu-nav>
+
+    <main>
+        <h2>Novo Avistamento</h2>
+        <div id="mensagem">Preencha os dados do fenômeno observado.</div>
+
+        <form id="avistamentoForm">
+            <input type="text" id="criatura" placeholder="Criatura ou Objeto (ex: Chupa-cabra, Luz no céu)" required>
+            <input type="text" id="local" placeholder="Local do avistamento (ex: Varginha - MG)" required>
+            <textarea id="relato" placeholder="Descreva o que aconteceu..." rows="4" required></textarea>
+            <button type="submit">Registrar</button>
+        </form>
+    </main>
+
+    <meu-footer></meu-footer>
+
+    <script type="module" src="./js/components.js"></script>
+    <script type="module" src="./js/criar.js"></script>
+</body>
+</html>
